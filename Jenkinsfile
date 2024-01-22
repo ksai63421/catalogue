@@ -2,16 +2,13 @@ pipeline {
     agent { node { label 'agent-1' } }
     stages {
         stage('Install dependencies') {
-             
-            steps {
+             steps {
                 sh 'npm install'
-
-            }
+             }
         }
         stage('Unit test') {
-             
-            steps {
-                sh "unit testing is done here"
+             steps {
+                echo "unit testing is done here"
 
             }
         }
