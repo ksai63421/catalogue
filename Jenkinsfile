@@ -12,7 +12,7 @@ pipeline {
 
             }
         }
-        // sonar-scanner command expects sonar-project.properties should be available
+        //sonar-scanner command expects sonar-project.properties should be available
          stage('SonarScan') {
              steps {
                 sh 'ls -ltr'
