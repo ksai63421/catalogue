@@ -21,6 +21,7 @@ pipeline {
         stage('Build') {
              steps {
                 sh 'ls -ltr'
+                sh 'zip -r ./*'
 
             }
         }
@@ -34,7 +35,7 @@ pipeline {
     post{
         always{
             echo "cleaning up workspace"
-             deleteDir()
+             //deleteDir()
         }
     }
 }
