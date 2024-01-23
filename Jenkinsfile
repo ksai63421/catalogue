@@ -43,6 +43,7 @@ pipeline {
         ]
       )
     }
+}
    
 
          stage('Deploy') {
@@ -58,6 +59,7 @@ pipeline {
              deleteDir()
         }
     }
+}
 
 
     
