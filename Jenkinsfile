@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Publish Artifact') {
              steps {
-        nexusArtifactUploader(
+                nexusArtifactUploader(
         nexusVersion: 'nexus3',
         protocol: 'http',
         nexusUrl: 'http://54.224.110.82:8081/',
@@ -36,16 +36,16 @@ pipeline {
         repository: 'catalogue',
         credentialsId: 'nexus-auth',
         artifacts: [
-            [artifactId: catalogue,
+            [artifactId: 'catalogue',
              classifier: '',
              file: 'catalogue.zip',
              type: 'zip']
         ]
-      )
+     )
+
     }
 }
    
-
          stage('Deploy') {
              steps {
                 echo "Deployment"
