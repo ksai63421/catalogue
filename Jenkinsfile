@@ -41,9 +41,9 @@ pipeline {
              file: 'catalogue.zip',
              type: 'zip']
         ]
-  )
+      )
+   }
 
-            }
          stage('Deploy') {
              steps {
                 echo "Deployment"
