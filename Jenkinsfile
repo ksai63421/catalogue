@@ -42,7 +42,8 @@ pipeline {
              type: 'zip']
         ]
       )
-   }
+    }
+   
 
          stage('Deploy') {
              steps {
@@ -57,6 +58,6 @@ pipeline {
              deleteDir()
         }
     }
-}
-}
+
+
     
