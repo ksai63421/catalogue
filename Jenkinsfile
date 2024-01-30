@@ -20,6 +20,7 @@ pipeline {
         // }
         stage('Build') {
              steps {
+                sh 'pwd'
                 sh 'ls -ltr'
                 sh 'zip -r catalogue.zip ./* --exclude=.git --exclude=.zip'
 
